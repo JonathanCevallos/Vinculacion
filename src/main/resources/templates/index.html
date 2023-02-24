@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Index</title>
+<!--    Carga los estilos CSS de bootstrap-->
+    <div th:insert="fragments/base :: css"></div>
 </head>
-<body>
-$END$
+<body>>
+<form>
+<button class="btn btn-primary" href="powerpoint.html">Power</button>
+    <a class="btn btn-danger" th:href="@{/powerpoint}" > ir</a>
+</form>
+<!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--    Carga los JS de bootstrap-->
+<div th:insert="fragments/base :: js"></div>
 </body>
 </html>
