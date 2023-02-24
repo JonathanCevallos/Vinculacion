@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>soy powerpoint</title>
-</head>
-<body>
-
+    <!DOCTYPE html>
+    <html lang="es" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accesibilidad</title>
+        <!--    Carga los estilos CSS de bootstrap-->
+        <div th:insert="fragments/base :: css"></div>
+    </head>
+<body><!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--Escribir contenido-->
+<div class="container-fluid">
+    <h1>Hola soy powerpoint</h1>
+</div>
+<div th:insert="fragments/base :: js"></div>
 </body>
 </html>
