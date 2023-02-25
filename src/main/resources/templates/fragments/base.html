@@ -70,7 +70,16 @@
     </div>
     <!--    Fin del NAV-->
 </div>
-
+<di th:fragment="footer">
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="https://www.uteq.edu.ec/"> Universidad Técnica Estatal de Quevedo</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</di>
 <!--JS DE BOOTSTRAP-->
 <div th:fragment="js">
     <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
