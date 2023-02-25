@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <!DOCTYPE html>
-    <html lang="es" xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8">
-        <title>Accesibilidad</title>
-        <!--    Carga los estilos CSS de bootstrap-->
-        <div th:insert="fragments/base :: css"></div>
-    </head>
+
+    <meta charset="UTF-8">
+    <title>Accesibilidad</title>
+    <!--    Carga los estilos CSS de bootstrap-->
+    <div th:insert="fragments/base :: css"></div>
+</head>
 <body><!--Carga el NAV-->
 <div th:insert="fragments/base :: nav"></div>
 <!--Escribir contenido-->
 <div class="container-fluid">
-    <h1>Hola soy powerpoint</h1>
+    <br>
+    <h1 class="text-center">Accesibilidad en MS PowerPoint 365</h1>
+    <p>MS PowerPoint 365 tiene muchos recursos integrados que ayudan a los usuarios en diferentes formas ya sea para
+        habilidades de lectura o presentaciones. Sin embargo, los usuarios con discapacidad visual, daltónicos o
+        disléxicos pueden tener dificultades para seguir la presentación o navegar por MS PowerPoint 365. Así, el acceso
+        a la presentación para este tipo de usuarios no solo es necesario, sino también esencial. MS PowerPoint 365
+        mejora la accesibilidad a estas presentaciones con la implementación de herramientas tales como: Comprobar
+        accesibilidad, Texto alternativo, Panel de orden de lectura, entre otros. </p>
+    <p>En general, las personas que no tienen algún tipo de discapacidad podrían no conocer los parámetros de
+        accesibilidad que se debe de tener en cuenta al momento de elaborar una presentación en MS PowerPoint 365. Esto
+        conlleva a crear un sin número de archivos de presentación sin parámetros de accesibilidad. Por esto resulta
+        complicado para un usuario con discapacidad hacer uso de una presentación en MS PowerPoint 365 </p>
+    <h3>Comprobar accesibilidad en MS PowerPoint 365</h3>
+    <p>Para acceder al comprobador de accesibilidad que MS PowerPoint 365 implementa se debe hacer clic izquierdo en la
+        pestaña “Revisar” para que de esta manera se visualicen las diferentes opciones como se muestra en la Figura 1,
+        siendo una de ellas el “Comprobar accesibilidad” </p>
+    <img>
+    <p>El comprobador de accesibilidad implementa algunas reglas para que los archivos de MS PowerPoint sean accesibles.
+        Al momento de hacer clic en el comprobador de accesibilidad, estas reglas se ejecutan y evalúan si el archivo
+        PowerPoint las cumple. </p>
+    <h3>Reglas del Comprobador de accesibilidad en Microsoft 365</h3>
+    <p>Para su manejo adecuado el comprobador clasifica cada problema como un error, una advertencia o una sugerencia,
+        en donde:</p>
+    <ul>
+        <li>Error. Se da cuando el documento sea difícil o imposible de leer y entender para personas con
+            discapacidad.
+        </li>
+        <li>Advertencia. Ocurre cuando en la mayoría de los casos, pero no todos, el documento es difícil de
+            comprender para personas con discapacidad.
+        </li>
+        <li>Sugerencia. Surge cuando el contenido puede ser comprendido por personas con algún tipo de discapacidad,
+            pero que podría ser presentado de una mejor manera.
+        </li>
+        <li>Servicios inteligentes. Contenido que se hace accesible automáticamente y que debe revisar para obtener
+            precisión y contexto.
+        </li>
+    </ul>
+    <p>Al hacer clic en un elemento de los resultados, se resalta el elemento correspondiente en el documento y se
+        muestra la sección “Información adicional”:</p>
+    <ul>
+        <li>
+            ¿Por qué corregir?: Explica por qué el problema afecta la accesibilidad.
+        </li>
+        <li>¿Cómo solucionarlo?: Sugerencias para reparar el problema.</li>
+    </ul>
 </div>
+
+
 <div th:insert="fragments/base :: js"></div>
 </body>
 </html>
