@@ -29,4 +29,8 @@ public class HomeConroller {
     public String audiolibros() {
         return "audiolibros";
     }
+    @GetMapping("/nvda")
+    public String nvda() {
+        return "nvda";
+    }
 }
