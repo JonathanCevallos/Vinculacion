@@ -5,25 +5,33 @@
     <!--    CSS BOOTSTRAP-->
     <div th:fragment="css">
         <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+<!--        <link rel="stylesheet" th:href="@{/css/estilos.css}">-->
         <style type="text/css">
             .bg-success {
                 background-color: #025a27 !important;
             }
-            a{color: #025a27!important;}
-            h1{
-                color: black;
+
+            a {
+                color: #025a27 !important;
             }
-            h3{
-                color:black;
-            }
-            li{
-                color: black;
-            }
-            ul{
+
+            h1 {
                 color: black;
             }
 
-            p{
+            h3 {
+                color: black;
+            }
+
+            li {
+                color: black;
+            }
+
+            ul {
+                color: black;
+            }
+
+            p {
                 color: black;
                 text-align: justify;
             }
@@ -55,17 +63,17 @@
                                     <a class="nav-link" aria-current="page" th:href="@{/index}">Accesibilidad</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link"aria-current="page" th:href="@{/powerpoint}">MS PowerPoint</a>
+                                    <a class="nav-link" aria-current="page" th:href="@{/powerpoint}">MS PowerPoint</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link"aria-current="page" th:href="@{/word}">MS Word</a>
+                                    <a class="nav-link" aria-current="page" th:href="@{/word}">MS Word</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link"aria-current="page" th:href="@{/pdf}">Doc. PDF</a>
+                                    <a class="nav-link" aria-current="page" th:href="@{/pdf}">Doc. PDF</a>
                                 </li>
                                 <div class="vr"></div>
                                 <li class="nav-item">
-                                    <a class="nav-link"aria-current="page" th:href="@{/audiolibros}">Audiolibro</a>
+                                    <a class="nav-link" aria-current="page" th:href="@{/audiolibros}">Audiolibro</a>
                                 </li>
                             </ul>
 
@@ -84,9 +92,9 @@
 <di th:fragment="footer">
     <footer class="footer  fixed-bottom bg-light text-center text-lg-start">
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center text-light p-3" style="background-color: rgb(2, 90, 39);">
             © 2023 Copyright:
-            <a class="text-dark" href="https://www.uteq.edu.ec/"> Universidad Técnica Estatal de Quevedo</a>
+            <a class="text-light" href="https://www.uteq.edu.ec/"> Universidad Técnica Estatal de Quevedo</a>
         </div>
         <!-- Copyright -->
     </footer>
