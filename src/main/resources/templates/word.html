@@ -10,7 +10,32 @@
 <div th:insert="fragments/base :: nav"></div>
 <!--Escribir contenido-->
 <div class="container-fluid">
-    <h1>Hola soy word</h1>
+    <section>
+        <br>
+        <h1 class="text-center bold">Accesibilidad en Microsoft Word (MS Word)</h1>
+        <div class="row g-0 align-content-center">
+            <div class="col-md-4">
+                <figure >
+                    <img src="img/accesibilidadword.png"  dir="auto" class="w-50 h-50 rounded mx-auto d-block"
+                         alt="Imagen de accesibilidad en MS Word" title="Accesibilidad en MS Word">
+                    <figcaption class="text-center">Figura 1. Accesibilidad en MS Word.</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <p class="card-text">
+                        MS Word es un software informático para el procesamiento de texto que permite crear documentos
+                        bien organizados, con estilos, en los que se pueden incluir imágenes y otros objetos multimedia.
+                        Para garantizar que todos los usuarios tengan un acceso correcto a la información contenida en
+                        el documento se deben utilizar las herramientas proporcionadas por MS Word. MS Word
+                        incluye una herramienta para comprobar la accesibilidad que permite revisar el contenido y
+                        marcar los problemas de accesibilidad que se detecten.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
 </div>
 <div th:insert="fragments/base :: js"></div>
 </body>
